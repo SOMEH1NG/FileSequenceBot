@@ -1,0 +1,21 @@
+{
+  "name": "file-sequence-bot",
+  "version": "1.0.0",
+  "description": "A bot to send files in a sequence.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.0.0",
+    "mongodb": "^3.6.0"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/illuminati-Dev/jssequencebot"
+  }
+}
