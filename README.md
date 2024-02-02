@@ -26,10 +26,44 @@ File Sequencing Bot! This Telegram bot is designed to help you organize and sequ
 4. **Cancel File Sequencing:**
    - Use the command `/cancel` if you want to cancel the ongoing file sequencing process.
 
+### VPS Deployment
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/SOMEH1NG/FileSequenceBot
+    cd FileSequenceBot
+    ```
+
+2. Build the Docker image:
+
+    ```bash
+    sudo docker build -t file-sequence-bot .
+    ```
+
+3. Run the Docker container:
+
+    ```bash
+    sudo docker run -d -p 8080:8080 file-sequence-bot
+    ```
+
+4. Check container logs:
+
+    ```bash
+    sudo docker logs <container id>
+    ```
+
+5. Stop the Docker container if needed:
+
+    ```bash
+    sudo docker stop <container_id>
+    ```
+    
 ## Lang Used
 
 - **Language**: JavaScript
 - **Framework**: Telegraf (Telegram Bot Framework)
 - **Database**: MongoDB
 - **Libraries**: Telegraf, MongoDB
+
 
