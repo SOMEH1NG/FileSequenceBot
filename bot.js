@@ -109,7 +109,7 @@ client.connect().then(() => {
     usersCollection = db.collection('users');
 // fll ur bot token correctly//
     const bot = new Telegraf('UR BOT TOKEN');
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 8080; // don't change port
 
     bot.start(startMessage);
 
