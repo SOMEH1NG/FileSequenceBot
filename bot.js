@@ -1,7 +1,7 @@
 const { Telegraf, Markup, InputFile } = require('telegraf');
 const { MongoClient } = require('mongodb');
 
-const mongoUri = "mongodb+srv://BlackHatDev:BlackHatDev@blackhatdev.zk92igo.mongodb.net/?retryWrites=true&w=majority";
+const mongoUri = "YOUR MONGOURL";
 const client = new MongoClient(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let usersCollection;
