@@ -28,37 +28,52 @@ File Sequencing Bot! This Telegram bot is designed to help you organize and sequ
 
 ### VPS Deployment
 
-1. Clone the repository:
+1. Update and upgrade the system:
 
     ```bash
-    git clone https://github.com/SOMEH1NG/FileSequenceBot
+    sudo apt update
+    sudo apt upgrade -y
+    ```
+
+2. Install Node.js and npm:
+
+    ```bash
+    sudo apt install -y curl
+    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+    sudo apt install -y nodejs
+    ```
+
+3. Clone the repository:
+
+    ```bash
+    git clone https://github.com/SOMEH1NG/FileSequenceBot.git
     cd FileSequenceBot
     ```
 
-2. Build the Docker image:
+4. Build the Docker image:
 
     ```bash
-    sudo docker build -t file-sequence-bot .
+    docker build -t file-sequence-bot .
     ```
 
-3. Run the Docker container:
+5. Run the Docker container:
 
     ```bash
-    sudo docker run -d -p 8080:8080 file-sequence-bot
+    docker run -d -p 3000:3000 file-sequence-bot
     ```
 
-4. Check container logs:
+6. Check container logs:
 
     ```bash
-    sudo docker logs <container id>
+    docker logs <container_id>
     ```
 
-5. Stop the Docker container if needed:
+7. Stop the Docker container if needed:
 
     ```bash
-    sudo docker stop <container_id>
+    docker stop <container_id>
     ```
-    
+
 ## Lang Used
 
 - **Language**: JavaScript
