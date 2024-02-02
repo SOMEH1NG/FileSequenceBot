@@ -1,3 +1,5 @@
+// copyright ©️ https://telegram.dog/imMitsuoSuwa
+
 const { Telegraf, Markup, InputFile } = require('telegraf');
 const { MongoClient } = require('mongodb');
 
