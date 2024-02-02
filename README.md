@@ -59,7 +59,7 @@ File Sequencing Bot! This Telegram bot is designed to help you organize and sequ
 5. Run the Docker container:
 
     ```bash
-    docker run -d -p 3000:3000 file-sequence-bot
+    docker run -d -p 8080:8080 file-sequence-bot
     ```
 
 6. Check container logs:
